@@ -246,9 +246,11 @@ function breakStatement(numero) {
     numero += 2;
     array.push(numero);
     if (numero === i) {
-      return "Se interrumpió la ejecución";
       break
     }
+  }
+  if (i < 10) {
+  return "Se interrumpió la ejecución";
   }
   return array;
 }
